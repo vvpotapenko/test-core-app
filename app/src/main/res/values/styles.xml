@@ -1,0 +1,40 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Text styles (from big to small) -->
+    <style name="Example.TextAppearance.Display3" parent="TextAppearance.AppCompat.Display3" />
+
+    <style name="Example.TextAppearance.Display2" parent="TextAppearance.AppCompat.Display2" />
+
+    <style name="Example.TextAppearance.Display1" parent="TextAppearance.AppCompat.Display1" />
+
+    <style name="Example.TextAppearance.Headline" parent="TextAppearance.AppCompat.Headline" />
+
+    <style name="Example.TextAppearance.Title" parent="TextAppearance.AppCompat.Title" />
+
+    <style name="Example.TextAppearance.Subhead" parent="TextAppearance.AppCompat.Subhead" />
+
+    <style name="Example.TextAppearance.Subhead.Inverse" parent="TextAppearance.AppCompat.Subhead.Inverse" />
+
+    <style name="Example.TextAppearance.Body2" parent="TextAppearance.AppCompat.Body2" />
+
+    <style name="Example.TextAppearance.Body1" parent="TextAppearance.AppCompat.Body1" />
+
+    <style name="Example.TextAppearance.Caption" parent="TextAppearance.AppCompat.Caption" />
+
+    <!-- Buttons -->
+    <!-- Regular -->
+    <style name="Example.Button" parent="Widget.AppCompat.Button" />
+    <!-- Raised -->
+    <style name="Example.Button.Colored" parent="Widget.AppCompat.Button.Colored" />
+    <!-- Flat -->
+    <style name="Example.Button.Borderless" parent="Widget.AppCompat.Button.Borderless" />
+    <!-- Colored flat -->
+    <style name="Example.Button.Borderless.Colored" parent="Widget.AppCompat.Button.Borderless.Colored" />
+
+</resources>

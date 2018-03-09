@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Core Application</string>
+    <string name="current_device_version_title">Текущая версия устройства</string>
+    <string name="version_title">Версия устройства</string>
+    <string name="version_obsolete">Устаревшая</string>
+    <string name="version_latest">Последняя</string>
+    <string name="install">Установить</string>
+</resources>
