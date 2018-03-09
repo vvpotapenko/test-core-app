@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 26
@@ -11,10 +12,20 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    signingConfigs {
+        release {
+            storeFile file("../keys/store.jks")
+            storePassword "123456"
+            keyAlias "key0"
+            keyPassword "123456"
+        }
+    }
+
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 }
@@ -35,5 +46,10 @@ dependencies {
 repositories {
     mavenCentral()
 }
+task prepareApk(dependsOn: build, type: Copy) {
+    description = "Prepare apk"
 
-apply plugin: 'kotlin-android-extensions'
+    from 'build/outputs/apk', 'build/outputs/mapping'
+    include '**/app-release.apk'
+    into '../dist'
+}
